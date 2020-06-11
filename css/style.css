@@ -51,6 +51,7 @@ body {
     width: 958px;
     height: 114px;
     margin: 0 auto 10px;
+    position: relative;
 }
 .main {
     width: 710px;
@@ -207,3 +208,31 @@ body {
 .nav_content a:hover {
     text-decoration: underline;
 }
+
+
+/* 搜索栏 */
+#search .bar{
+    width: 958px;
+    height: 64px;
+    border: 1px solid #c40d0e;
+    position: absolute;
+    top: 16px;
+    left: -1px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px #e3e3e3;
+    background: #e21c01;
+}
+#serch .menu {}
+#serch .menu li {
+    float: left;
+    width: 78px;
+    height: 25px;
+    margin-right: 1px;
+    border: 1px solid #f8d0bf;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px #e3e3e3;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+#serch .menu .active {}
