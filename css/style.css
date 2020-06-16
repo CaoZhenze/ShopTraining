@@ -78,7 +78,6 @@ body {
 }
 .section {
     width: 318px;
-    /* height: 200px; */
     padding: 0 15px;
 }
 .options {
@@ -665,4 +664,222 @@ body {
     background: url(../img/btn_go.png);
     border: none;
     margin-left: 10px;
+}
+
+.new_title{
+    margin-top: 13px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.new_title .title_content{
+    float: left;
+}
+.new_title strong{
+    font-size: 12px;
+    font-family: arial;
+    color: #ea2b31;
+}
+.new_title span{
+    font-size: 24px;
+    color: #333;
+}
+.new_title em{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ec1c16;
+    position: relative;
+    /* float: left; */
+    margin-left: 10px;
+    top: 3px;
+    /* top: -10px; */
+}
+.new_title img{
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    right: -15px;
+    top: -13px;
+    z-index: -1;
+}
+
+.activity{
+    margin-left: 8px;
+}
+.activity .con{
+    border-top: 1px solid #dedede;
+    padding-top: 20px;
+}
+.activity .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.activity .info img{
+    height: 100px;
+}
+.activity .info .text{
+    margin-left: 10px;
+}
+.activity .info .text h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.activity .text h3 em {
+    color: red;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+}
+.activity .text p{
+    margin-top: 8px;
+    font-size: 13px;
+    color: #929292;
+}
+
+.calendar{
+    width: 323px;
+    position: relative;
+}
+.calendar h3 {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-right: 31px;
+    word-spacing: 10px;
+    background: #f5f5f5;
+}
+.calendar h3 span{
+    font-size: 14px;
+    font-family: arial;
+}
+
+.calendar ol li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 2px 2px 0;
+    background: #ededed;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: #666;
+}
+.calendar .normal{
+    background: #f8f8f8;
+    color: #ccc;
+}
+.calendar .active, .calendar .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.calendar .active{
+    border: 2px solid #d30d08;
+    width: 36px;
+    height: 36px;
+}
+.calendar .img{
+    width: 40px;
+    height: 40px;
+}
+
+.today_info{
+    width: 294px;
+    height: 84px;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    background: #fff;
+    position: absolute;
+    top: 135px;
+    left: 270px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+} 
+.today_info img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #dbdbdb;
+    float: left;
+}
+.today_info .text{
+    width: 200px;
+    float: right;
+}
+ .today_info h4{
+     font-size: 12px;
+     color: #333;
+ }
+ .today_info strong{
+     color: #ccc;
+     font-size: 16px;
+ }
+ .today_info p{
+     color: #999;
+     line-height: 20px;
+ }
+
+.today_info span{
+    width: 8px;
+    height: 14px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: -8px;
+}
+.recommend .new_title{
+    padding-bottom: 67px;
+}
+
+.recommend .pic{
+    width: 294px;
+    height: 168px;
+    border-top: 1px solid #dedede;
+    padding: 12px 12px 0;
+    background: #f8f8f8;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.recommend .pic ul{
+    width: 223px;
+    height: 133px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+.recommend .pic ul li{
+    width: 223px;
+    height: 133px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.recommend .pic ul img{
+    width: 223;
+    height: 133px;
+}
+.recommend .pic ol{
+    position: absolute;
+    top: 15px;
+    right: 12px;
+}
+.recommend .pic ol li, .recommend .pic ol img{
+    width: 54px;
+    height: 30px;
+}
+.recommend .pic ol li{
+    border: 3px solid #fff;
+    margin-bottom: 13px;
+}
+.recommend .pic ol .active{
+    border: 3px solid #d6191d;
+}
+.recommend .pic p{
+    line-height: 32px;
+    position: absolute;
+    left: 12px;
+    bottom: 0px;
 }
