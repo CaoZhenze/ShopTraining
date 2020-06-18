@@ -796,6 +796,7 @@ body {
     top: 135px;
     left: 270px;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
 } 
 .today_info img{
     width: 80px;
@@ -882,4 +883,121 @@ body {
     position: absolute;
     left: 12px;
     bottom: 0px;
+}
+
+.recommend .recommend_content{
+    padding: 12px;
+    padding-bottom: 14.5px;
+}
+.recommend .recommend_content div{
+    padding-bottom: 14px;
+    font-size: 10px;
+}
+.recommend .recommend_content div em{
+    padding: 0 2px;
+    color: #929292;
+}
+.recommend .recommend_content div img{
+    height: 12px;
+    position: relative;
+    top: 3px;
+}
+.recommend .recommend_content div span{
+    float: right;
+    color: #929292;
+}
+
+.subway_map_warp{
+    height: 330px;
+}
+.subway_map_warp .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subway_map_warp .con img{
+    height: 243px;
+    padding: 20px 0;
+    padding-bottom: 30px;
+}
+
+.bbs{
+    height: 328px;
+}
+.bss ol{
+    /* position: relative; */
+}
+.bbs ol li {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+.bbs ol strong, .bbs ol a{
+    float: left;
+}
+.bbs ol strong{
+    color: #d80000;
+    width: 45px;
+    text-indent: 10px;
+}
+.bbs ol img{
+    display: none;
+}
+.bbs ol a{
+    color: #333;
+}
+.bbs ol span{
+    display: none;
+}
+.bbs ol em{
+    display: none;
+}
+.bbs ol b{
+    float: right;
+    color: #666;
+    padding-right: 22px;
+    font-weight: normal;
+}
+.bbs .active{
+    height: 70px;
+    background: #d90000;
+    position: relative;
+}
+.bbs .active img, .bbs .active a, .bbs .active span, .bbs .active em{
+    position: absolute;
+}
+.bbs .active img{
+    display: block;
+    top: 7px;
+    left: 10px;
+}
+.bbs .active a{
+    color: #fff;
+    font-weight: bold;
+    top: 7px;
+    left: 70px;
+}
+.bbs .active span{
+    display: block;
+    color: #fff;
+    top: 33px;
+    left: 70px;
+}
+.bbs .active b{
+    display: none;
+}
+.bbs .active em{
+    display: block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    bottom: -5px;
+    right: 4px;
+}
+
+.hot_area{
+    height: 258px;
 }
