@@ -797,6 +797,7 @@ body {
     left: 270px;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
+    display: none;
 } 
 .today_info img{
     width: 80px;
@@ -1109,4 +1110,39 @@ body {
 }
 #footer div{
     padding: 5px;
+}
+
+.login_warp form{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.login_warp form .input{
+    width: 100px;
+}
+.login_warp form .submit{
+    font-weight: bold;
+    background: red;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.login_warp .login_tip{
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.login_warp .login_tip li{
+    flex: 1;
+    vertical-align: middle;
+    display: inline;
+    color: #333;
+}
+.login_warp .login_tip li img{
+    position: relative;
+    top: 5px;
+    padding: 0 10px;
 }

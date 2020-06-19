@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/100du.ico">
     <script src="js/jquery.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
         <img class="search_img" src="img/search/bianqian2.png" alt="100度享乐网">
 
         <div class="bar">
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li class="active">搜店</li>
                 <li class="gradient">地址</li>
                 <li class="gradient">优惠券</li>
@@ -85,20 +86,15 @@
             <div class="update_text">UPDATE</div>
             <div class="wrap">
                 <ul>
-                    <li><a href="#">
+                    <!-- <li><a href="#">
                             <strong>萱萱</strong>
                             <span>5分钟前</span>
                             写了一篇新文章：哪些灿烂华美的瞬间...
-                    </a></li>
-                    <li><a href="#">
-                            <strong>畅畅</strong>
-                            <span>7分钟前</span>
-                            写了一篇新文章：哪些灿烂华美的瞬间...
-                    </a></li>
+                    </a></li> -->
                 </ul>
             </div>
-            <a href="javascript:;" class="triangle_up"></a>
-            <a href="javascript:;" class="triangle_down_red"></a>
+            <a id="updateUpBtn" href="javascript:;" class="triangle_up"></a>
+            <a id="updateDownBtn" href="javascript:;" class="triangle_down_red"></a>
         </div>
 
     </div>
@@ -121,7 +117,7 @@
                 </div>
 
                 <div class="options fr">
-                    <ul class="nav">
+                    <ul class="nav tabNav1">
                         <li class="active fl">
                             <strong>HOT SHOP <span>红店铺</span></strong>
                             <a href="javascript:;" class="triangle_down_red"></a>
@@ -133,7 +129,7 @@
                     </ul>
                     <div class="con">
                         <div class="hot_list">
-                            <ul>
+                            <ul class="tabCon1">
                                 <li>
                                     <div class="img"><a href="#"><img src="img/hot/hot_content_img.png" alt=""></a></div>
                                     <div class="text">
@@ -162,6 +158,41 @@
                                         <h3><a href="#">御舟和涵珍园国际酒店</a></h3>
                                         <p>
                                             区域：朝阳/CBD<br/>
+                                            人均：180元<br/>
+                                            人气：12321 <br/>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="tabCon1">
+                                <li>
+                                    <div class="img"><a href="#"><img src="img/hot/hot_content_img.png" alt=""></a></div>
+                                    <div class="text">
+                                        <h3><a href="#">朝阳和涵珍园</a></h3>
+                                        <p>
+                                            区域：郑州/CBD<br/>
+                                            人均：180元<br/>
+                                            人气：12321 <br/>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img"><a href="#"><img src="img/hot/hot_content_img.png" alt=""></a></div>
+                                    <div class="text">
+                                        <h3><a href="#">朝阳和涵珍园</a></h3>
+                                        <p>
+                                            区域：郑州/CBD<br/>
+                                            人均：180元<br/>
+                                            人气：12321 <br/>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img"><a href="#"><img src="img/hot/hot_content_img.png" alt=""></a></div>
+                                    <div class="text">
+                                        <h3><a href="#">朝阳和涵珍园</a></h3>
+                                        <p>
+                                            区域：郑州/CBD<br/>
                                             人均：180元<br/>
                                             人气：12321 <br/>
                                         </p>
@@ -246,13 +277,17 @@
                                     <li>23</li>
                                     <li>24</li>
                                     <li>25
-                                        <img class="img" src="img/content/activity_content_food.png" alt="">
+                                        <img class="img" info="爱神的箭阿斯加德拉大锯爱上了大点就爱丽丝肯德基爱上了" src="img/content/activity_content_food.png" alt="">
                                     </li>
                                     <li>26</li>
                                 </ol>
                                 <ol>
-                                    <li>27</li>
-                                    <li>28</li>
+                                    <li>27
+                                        <img class="img" info="爱神的箭阿斯加德拉大锯爱上了大点基爱上了" src="img/content/hot_content_img7.png" alt="">
+                                    </li>
+                                    <li>28
+                                        <img class="img" info="爱神的箭阿上了大点就爱丽丝肯德基爱上了" src="img/content/hot_content_img4.png" alt="">
+                                    </li>
                                     <li>29</li>
                                     <li>30</li>
                                     <li>31</li>
@@ -291,16 +326,16 @@
                             <img src="img/bk/bk_best.png" alt="">
                         </h2>
 
-                        <div class="pic">
+                        <div class="pic" id="fade">
                             <ul>
                                 <li><a href="#"><img src="img/content/recommend_context_1.png" alt=""></a></li>
                                 <li><a href="#"><img src="img/content/recommend_context_2.png" alt=""></a></li>
                                 <li><a href="#"><img src="img/content/recommend_context_3.png" alt=""></a></li>
                             </ul>
                             <ol>
-                                <li><a href="#"><img src="img/content/recommend_context_1.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/content/recommend_context_2.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/content/recommend_context_3.png" alt=""></a></li>
+                                <li class="active"><a href="javascript:;"><img src="img/content/recommend_context_1.png" alt=""></a></li>
+                                <li><a href="javascript:;"><img src="img/content/recommend_context_2.png" alt=""></a></li>
+                                <li><a href="javascript:;"><img src="img/content/recommend_context_3.png" alt=""></a></li>
                             </ol>
                             <p>爸爸去哪了~</p>
 
@@ -364,7 +399,7 @@
             <div class="main_wrap clear">
                 <div class="options fl">
                     <div class="subway_map_warp">
-                        <ul class="nav">
+                        <ul class="nav tabNav2">
                             <li class="active fl">
                                 <strong>SUBYWAY <span>地铁交通</span></strong>
                                 <a href="javascript:;" class="triangle_down_red"></a>
@@ -375,7 +410,8 @@
                             </li>
                         </ul>
                         <div class="con">
-                            <img src="img/content/subway_content_img.png" alt="">
+                            <img class="tabCon2" src="img/content/subway_content_img.png" alt="">
+                            <img class="tabCon2" src="img/content/content_img2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -399,7 +435,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>TOW</em>
                                 <b>世说新语</b>
                             </li>
                             <li>
@@ -407,7 +443,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>THREE</em>
                                 <b>世说新语</b>
                             </li>
                             <li>
@@ -415,7 +451,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>FOUR</em>
                                 <b>世说新语</b>
                             </li>
                             <li>
@@ -423,7 +459,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>FIVE</em>
                                 <b>世说新语</b>
                             </li>
                             <li>
@@ -431,7 +467,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>SIX</em>
                                 <b>世说新语</b>
                             </li>
                             <li>
@@ -439,7 +475,7 @@
                                 <img src="img/content//bbs_content_img1.png" alt="">
                                 <a href="#">保你没见过的古怪餐厅</a>
                                 <span>阿瑞斯</span>
-                                <em>ONE</em>
+                                <em>SEVEN</em>
                                 <b>世说新语</b>
                             </li>
                         </ol>
@@ -608,11 +644,21 @@
 
         </div>
         <div class="side fr">
-            <div class="side_section">
-                <h2 class="main_title">
-                    <strong>LOAD <span>登录</span></strong>
-                    <a href="#"><img src="img/side/title_img.png" alt="更多"></a>
-                </h2>
+            <div class="side_section gradient">
+                <div class="login_warp">
+                    <h2 class="main_title">
+                        <strong>LOAD <span>登录</span></strong>
+                        <a href="#"><img src="img/side/title_img.png" alt="更多"></a>
+                    </h2>
+                    <form action="#">
+                        用户名：<input class="input" type="text"> <input type="checkbox">记住我<br/>
+                        密&nbsp;&nbsp;&nbsp;码：<input style="margin-left: 2px;" class="input" type="password"> <input class="submit" type="submit" value="登录">
+                    </form>
+                    <ul class="login_tip">
+                        <li><a href="#"><img src="img/dot.png">新用户注册</a></li>
+                        <li><a href="#"><img src="img/dot.png">忘记密码了</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="side_ad">
