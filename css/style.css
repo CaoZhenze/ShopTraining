@@ -1001,3 +1001,112 @@ body {
 .hot_area{
     height: 258px;
 }
+.hot_area li {
+    margin: 0 2px 2px 0;
+    float: left;
+    position: relative;
+}
+.hot_area li, .hot_area li img {
+    width: 78px;
+    height: 78px;
+}
+.hot_area .area1, .hot_area .area1 img {
+    width: 156px;
+    height: 78px;
+}
+.hot_area .area2, .hot_area .area2 img {
+    width: 77px;
+    height: 78px;
+}
+.hot_area p {
+    width: 144px;
+    height: 66px;
+    padding: 12px 0 0 12px;
+    line-height: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.media_content{
+    height: 242px;
+}
+.media_content .top_content{
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 5px;
+}
+.media_content .top_content .tip{
+    text-indent: 24px;
+}
+.media_content .top_content div{
+    padding: 8px 0;
+}
+.media_content .top_content div strong{
+    color: red;
+    margin-right: 60px;
+}
+.media_content .top_content div img{
+    padding: 0 2px;
+    position: relative;
+    top: -2px;
+}
+.media_content .bottom_content{
+    padding-top: 15px;
+}
+.media_content .bottom_content div{
+    /* flex: 1; */
+    padding-left: 10px;
+    float: left;
+
+}
+.media_content .bottom_content .div2{
+    margin-left: 50px;
+}
+.media_content .bottom_content div ul{
+    padding: 10px 0;
+}
+.media_content .bottom_content div ul li{
+    height: 27px;
+    line-height: 27px;
+    background: url(../img/dot.png) no-repeat 5px center;
+    vertical-align: middle;
+    text-indent: 14px;
+
+}
+.media_content .bottom_content div ul li a{
+    color: #333;
+}
+.media_content .bottom_content div ul li a:hover{
+    text-decoration: underline;
+}
+
+.help_content{
+    height: 242px;
+}
+.help_content li{
+    padding: 12px;
+    height: 35px;
+}
+.help_content li img{
+    width: 90px;
+    float: left;
+}
+.help_content li div{
+    position: relative;
+    left: 20px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: grey;
+    text-align: center;
+
+}
+#footer div{
+    padding: 5px;
+}
